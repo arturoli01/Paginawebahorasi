@@ -1,0 +1,15 @@
+<h1>Creating article</h1>
+
+<%= form_for @Article do |form| %>
+  <p>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </p>
+  <%= form.submit %>
+<% end %>
+
+<%= link_to 'Back', articles_path %>
