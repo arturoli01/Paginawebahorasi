@@ -1,0 +1,9 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.jumbotron_design{
+  background-color: white;
+}
+.jumbotron{
+  background-image: asset_url('home.jpg');
+  padding-bottom:1000px;
+}
