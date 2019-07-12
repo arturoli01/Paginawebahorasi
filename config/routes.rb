@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :articles
   root :to => "home#home"
+
+  namespace :api do
+    namespace :v1 do
+      get '/allarticles' => 'articles#return_all_articles'
+    end
+  end
 end
